@@ -1,9 +1,9 @@
-"use client";
+﻿"use client";
 import React, { useState } from "react";
 import { styled, alpha } from "@mui/material/styles";
 import SearchIcon from "@mui/icons-material/Search";
 
-import { Box, InputBase, Stack, Container } from "@mui/material/";
+import { Box, InputBase, Stack, Container } from "@mui/material";
 
 import { languages, curancy } from "@/utility/data";
 import Dropdown from "../views/Dropdown";
@@ -122,3 +122,4 @@ function PrimarySearchAppBar() {
 	);
 }
 export default PrimarySearchAppBar;
+

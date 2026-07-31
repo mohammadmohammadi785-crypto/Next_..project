@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import React, {
 	Fragment,
 	useCallback,
@@ -6,7 +6,7 @@ import React, {
 	useRef,
 	useState,
 } from "react";
-import { Box, Button, Container, Stack, Typography } from "@mui/material/";
+import { Box, Button, Container, Stack, Typography } from "@mui/material";
 import Grid from "@mui/material/Unstable_Grid2";
 
 import { AccountBalance, Coffee, LocalMall, Mood } from "@mui/icons-material";
@@ -231,3 +231,4 @@ function AboutUs() {
 }
 
 export default React.memo(AboutUs);
+

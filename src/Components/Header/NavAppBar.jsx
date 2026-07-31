@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import React, { useState, useEffect, useCallback } from "react";
 import {
 	AppBar,
@@ -12,7 +12,7 @@ import {
 	Container,
 	Tabs,
 	Tab,
-} from "@mui/material/";
+} from "@mui/material";
 
 import { Menu } from "@mui/icons-material";
 
@@ -227,3 +227,4 @@ function NavAppBar(props) {
 	);
 }
 export default React.memo(NavAppBar);
+

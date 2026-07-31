@@ -1,6 +1,6 @@
-"use client";
+﻿"use client";
 import React, { useRef, useState } from "react";
-import { Box, Container, Stack, Typography } from "@mui/material/";
+import { Box, Container, Stack, Typography } from "@mui/material";
 
 import Image from "next/image";
 import image_1 from "../../images/slider-24.jpg";
@@ -255,3 +255,4 @@ export default function CarouselMain() {
 		</Carousel>
 	);
 }
+

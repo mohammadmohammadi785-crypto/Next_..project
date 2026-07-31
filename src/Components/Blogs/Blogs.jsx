@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import React, { Fragment } from "react";
 import {
 	Card,
@@ -9,7 +9,7 @@ import {
 	Paper,
 	Stack,
 	Typography,
-} from "@mui/material/";
+} from "@mui/material";
 import Grid from "@mui/material/Unstable_Grid2";
 
 import { KeyboardDoubleArrowRight } from "@mui/icons-material";
@@ -139,3 +139,4 @@ function Blog() {
 	);
 }
 export default React.memo(Blog);
+

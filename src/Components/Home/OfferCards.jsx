@@ -1,5 +1,5 @@
-"use client";
-import { Card, CardActionArea } from "@mui/material/";
+﻿"use client";
+import { Card, CardActionArea } from "@mui/material";
 import Grid from "@mui/material/Unstable_Grid2";
 
 import style from "../../styles/home.module.css";
@@ -36,3 +36,4 @@ export default function OfferCards() {
 		</section>
 	);
 }
+

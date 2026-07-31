@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import React, { Fragment, useState } from "react";
 import {
@@ -10,7 +10,7 @@ import {
 	Menu,
 	MenuItem,
 	Tooltip,
-} from "@mui/material/";
+} from "@mui/material";
 import { PersonAdd, Settings, Logout } from "@mui/icons-material";
 
 function AccountMenuSigned() {

@@ -1,4 +1,4 @@
-"use client"
+﻿"use client"
 import { useState } from "react";
 import {
 	Avatar,
@@ -7,22 +7,35 @@ import {
 	Rating,
 	Stack,
 	Tab,
+	Tabs,
 	Typography,
 	Button,
 	TextField,
 	LinearProgress,
-} from "@mui/material/";
+} from "@mui/material";
 import Grid from "@mui/material/Unstable_Grid2";
 
+import { Star, ThumbUp } from "@mui/icons-material";
 
-import { TabContext, TabList, TabPanel } from "@mui/lab" 
 
+function TabPanel(props) {
+	const { children, value, index, ...other } = props;
 
-import { Star, ThumbUp } from "@mui/icons-material"
-
+	return (
+		<div
+			role="tabpanel"
+			hidden={value !== index}
+			id={`tabpanel-${index}`}
+			aria-labelledby={`tab-${index}`}
+			{...other}
+		>
+			{value === index && <Box sx={{ py: 3 }}>{children}</Box>}
+		</div>
+	);
+}
 
 export default function ProductSpices({ product }) {
-	const [value, setValue] = useState("1");
+	const [value, setValue] = useState(0);
 	const [isLogin, setIsLogin] = useState(false);
 	const [addReview, setAddReview] = useState(0);
 	console.log(addReview);
@@ -33,19 +46,19 @@ export default function ProductSpices({ product }) {
 
 	return (
 		<Box sx={{ width: "100%", typography: "body1" }} my={8}>
-			<TabContext value={value}>
-				<Box sx={{ borderBottom: 1, borderColor: "divider" }}>
-					<TabList
-						centered
-						onChange={handleChange}
-						aria-label="lab API tabs example"
-					>
-						<Tab label="Overview" value="1" />
-						<Tab label="Specifications" value="2" />
-						<Tab label="Reviews" value="3" />
-					</TabList>
-				</Box>
-				<TabPanel value="1">
+			<Box sx={{ borderBottom: 1, borderColor: "divider" }}>
+				<Tabs
+					centered
+					value={value}
+					onChange={handleChange}
+					aria-label="product spices tabs"
+				>
+					<Tab label="Overview" id="tab-0" aria-controls="tabpanel-0" />
+					<Tab label="Specifications" id="tab-1" aria-controls="tabpanel-1" />
+					<Tab label="Reviews" id="tab-2" aria-controls="tabpanel-2" />
+				</Tabs>
+			</Box>
+			<TabPanel value={value} index={0}>
 					<Typography variant="h6" mb={2}>
 						Highlights:
 					</Typography>
@@ -316,3 +329,4 @@ export default function ProductSpices({ product }) {
 		</Box>
 	);
 }
+

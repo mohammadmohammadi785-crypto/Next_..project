@@ -1,6 +1,6 @@
-"use client";
+﻿"use client";
 import React, { useEffect, useState } from "react";
-import { Container, Box, Stack, Typography } from "@mui/material/";
+import { Container, Box, Stack, Typography } from "@mui/material";
 import Grid from "@mui/material/Unstable_Grid2";
 
 import axios from "axios";
@@ -108,3 +108,4 @@ export default function ProductsSections() {
 		</section>
 	);
 }
+

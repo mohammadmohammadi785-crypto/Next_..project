@@ -1,4 +1,4 @@
-// "use client";
+﻿// "use client";
 import React from "react";
 import {
 	Box,
@@ -7,7 +7,7 @@ import {
 	Card,
 	CardContent,
 	Stack,
-} from "@mui/material/";
+} from "@mui/material";
 import Grid from "@mui/material/Unstable_Grid2";
 
 import { Instagram, Twitter } from "@mui/icons-material";
@@ -74,3 +74,4 @@ function TeamMembers() {
 	);
 }
 export default TeamMembers;
+
