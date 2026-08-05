@@ -88,7 +88,7 @@ export default function ProductSpices({ product }) {
 					</Typography>
 				</TabPanel>
 
-				<TabPanel value="2">
+				<TabPanel value={value} index={1}>
 					<Typography variant="h6" mb={2} mt={4}>
 						Specifications:
 					</Typography>
@@ -110,7 +110,7 @@ export default function ProductSpices({ product }) {
 						</tbody>
 					</table>
 				</TabPanel>
-				<TabPanel value="3">
+				<TabPanel value={value} index={2}>
 					<Stack direction="row" flexWrap="wrap">
 						<Stack gap={1}>
 							<Typography variant="subtitle1" mb={2}>

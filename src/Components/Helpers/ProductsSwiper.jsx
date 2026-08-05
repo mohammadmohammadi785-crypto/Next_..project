@@ -7,6 +7,7 @@ import { KeyboardArrowLeft, KeyboardArrowRight } from "@mui/icons-material";
 
 import "swiper/css";
 import "swiper/css/navigation";
+import "swiper/css/autoplay";
 
 // import required modules
 import { Swiper, SwiperSlide } from "swiper/react";
